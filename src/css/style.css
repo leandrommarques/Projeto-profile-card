@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
+body, html {
+    font-family: 'Kumbh Sans', sans-serif; 
+    font-size: 18px;
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+hr {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.ballons-bg {
+    display: flex;
+    
+}
+
+
+
+.bg-ballon-top {
+    position: absolute;
+    top: -50%;
+    right: 50%;
+}
+
+.bg-ballon-bottom {
+    max-height: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff url(../images/bg-pattern-card.svg) no-repeat ;
+    gap: 25px;
+    border-radius: 16px;
+    z-index: 10;
+    width: 350px;
+    height: 373px;
+    margin: 20px;
+}
+
+.profile-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    color: var(--dark-blue);
+    height: 100%;
+    padding-top: 45px;
+}
+
+.profile-information .avatar-img {
+    margin-top: 39px;
+    border: #fff 6px solid;
+    border-radius: 50%;
+    max-width: 100%;
+    
+}
+
+
+.card .profile-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card .range .profile-numbers .info {
+    padding: 31px;
+    transform: translateY(-39px);
+    
+}
+
+.profile-numbers .info .counter-type {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+
+.profile-numbers .info .counter, 
+.card .profile-information p{
+    font-weight: 700;
+}
+
+.card .profile-information .age,
+.card .profile-information .city, 
+.profile-numbers .info .counter-type {
+    color: var(--medium-blue);
+    letter-spacing: 1px;
+}
+
+.profile-numbers .info .flw,
+.profile-numbers .info .photo{
+    position: relative;
+    left: 10px;
+}
+
+.profile-numbers .info .like {
+    position: relative;
+    right: 4px;
+}
+.card .profile-informations .city {
+    font-size: 11px;
+}
